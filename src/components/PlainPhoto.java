@@ -1,4 +1,6 @@
-package decorator;
+package components;
+
+import interfaces.IPhoto;
 
 public class PlainPhoto implements IPhoto {
     private String name;
@@ -8,8 +10,8 @@ public class PlainPhoto implements IPhoto {
     }
 
     @Override
-    public String display() {
-        return "Displaying photo: " + name;
+    public String getDescription() {
+        return "Photo: " + name;
     }
 
     // Getter and Setter
